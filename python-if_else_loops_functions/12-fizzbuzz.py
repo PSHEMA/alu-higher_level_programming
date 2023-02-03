@@ -9,4 +9,4 @@ while i < 100:
     elif i % 5 == 0:
         print("Buzz", end=" ")
     else:
-        print(i, end="")
+        print(i, end=" ")
