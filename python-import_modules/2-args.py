@@ -15,4 +15,3 @@ if __name__ == '__main__':
             i = i + 1
     else:
         print("{} arguments.".format(args_number))
-
