@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def dividible_by_2(my_list=[]):
+def divisible_by_2(my_list=[]):
     result = []
     for number in my_list:
         if number % 2 == 0:
