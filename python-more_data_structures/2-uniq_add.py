@@ -4,5 +4,5 @@ def uniq_add(my_list=[]):
     for element in my_list:
         if element not in unique_set:
             unique_set.add(element)
-            rsult = result + element
+            result = result + element
     return result
