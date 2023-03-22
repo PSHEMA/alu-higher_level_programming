@@ -1,0 +1,21 @@
+"""Test cases for BaseGeometry"""
+
+import unittest
+from models.base_geometry import BaseGeometry
+
+class TestBaseGeometry(unittest.TestCase):
+    def test_area(self):
+        """Test area method"""
+        bg = BaseGeometry()
+        with self.assertRaises(Exception) as context:
+            bg.area()
+        self.assertEqual(str(context.exception), "area() is not implemented")
+
+    def test_integer_validator(self):
+        """Test integer_validator method"""
+        bg = BaseGeometry()
+        bg.integer_validator("test", 10)
+        with self.assertRaises(TypeError):
+            bg.integer_validator("test", "string")
+        with self.assertRaises(ValueError):
+            bg.integer_validator("test", -10)
