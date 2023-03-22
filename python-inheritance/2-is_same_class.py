@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""True or False"""
+"""T or F"""
 
 
 def is_same_class(obj, a_class):
-    """True or False"""
-    return isinstance(obj, a_class)
+    """T or F"""
+    return type(obj) == a_class
