@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A python script that fetches "https://alu-intranet.htbn.io/statu""""
+"""A python script that fetches "https://alu-intranet.htbn.io/status"""
 import urllib.request
 if __name__ == "__main__":
     with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
