@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A python script that sends a request and displays the the value of the X-Request-Id"""
+"""A python script that sends a request"""
 import requests
 import sys
 
