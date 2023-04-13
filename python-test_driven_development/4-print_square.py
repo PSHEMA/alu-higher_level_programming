@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """A function that prints a square with the character #"""
 
+
 def print_square(size):
+    """A square function"""
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
     if size < 0:
