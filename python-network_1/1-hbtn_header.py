@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A python script that sends arequest to the URL and displays the value of the X-Request-ID"""
+"""Python script that sends arequest to the URL"""
 import urllib.request
 import sys
 

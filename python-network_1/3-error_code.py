@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A python script that sends a request and displays the body of the response"""
+"""Python script that sends a request and displays the body of the response"""
 from urllib import request, error
 import sys
 
