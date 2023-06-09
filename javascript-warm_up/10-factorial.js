@@ -14,4 +14,3 @@ function factorial(n) {
 const arg = parseInt(process.argv[2]);
 
 console.log(factorial(arg));
-
