@@ -1,34 +1,29 @@
 #!/usr/bin/node
+
 class Rectangle {
   constructor (w, h) {
-    if (Number.isInteger(w) && Number.isInteger(h) && w > 0 && h > 0) {
+    if (w > 0 && h > 0) {
       this.width = w;
       this.height = h;
-    } else {
-      this.width = 0;
-      this.height = 0;
     }
   }
 
   print () {
-    if (this.width === 0 || this.height === 0) {
-      console.log('Empty rectangle');
-    } else {
-      for (let i = 0; i < this.height; i++) {
-        console.log('X'.repeat(this.width));
-      }
+    for (let i = 0; i < this.height; i++) {
+      console.log('X'.repeat(this.width));
     }
   }
 
   rotate () {
-    [this.width, this.height] = [this.height, this.width];
+    const temp = this.width;
+    this.width = this.height;
+    this.height = temp;
   }
 
   double () {
-    if (this.width !== 0 && this.height !== 0) {
-      this.width *= 2;
-      this.height *= 2;
-    }
+    this.width *= 2;
+    this.height *= 2;
   }
 }
+
 module.exports = Rectangle;
